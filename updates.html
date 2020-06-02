@@ -43,81 +43,21 @@
 		</div>
         
         <div class="side-bar-wrapper">
-            <a href="#files" class="nav-link-wrapper">Files</a>
+            <a href="#files" class="nav-link-wrapper active-nav-link">Files</a>
         </div>
 		<div class="content-wrapper-cse1010">
             <div class="content-paragraph">
-                <h1 class="section-header">Shapes & Coloring</h1>
-                <p>
-                    As mentioned earlier, Javascript(JS) is quite fun and usefull! One thing you can do with it is actually drawing! Well, its more displaying things on your screen but... Still is quite useful. Some things you can display are different shapes and lines! To start off, lets quickly see what a function is, this will allow you to understand the rest a lot more easely.<br>
-                    <br>
-                    A function is a simple way to call multiple lines of code. In other words, a function is there so you can call the name of the function and it will run every lines of code you have inside of it. For example, you might have a function called "DrawHouse" which as the name suggests, will draw a house. It might do so by drawing a triangle, a square, maybe more squares for windows etc. All of those lines of code you have to write yourself, but the great part about functions is that you can reuse them. With 1 function, you could draw an entire town with those houses you just made!<br>
-                    <br>
-                    So, now that we know that, we can start drawing. In javascript, there are some default functions you can use, three of which we will be using now! When calling a function(typing the name so it runs it), it is important to add a semi-colon at the end, or else it will not work. The first three functions we are going to be using are those.
-                </p>
+                <h1 class="section-header">Weekly updates</h1>
 
-
-                <ol class="code-segment rounded">
-                    <li>ellipse(100, 100, 100, 100);</li>
-                    <li>rect(100,100, 100, 100);</li>
-                    <li>line(100, 100, 200, 200);</li>
-                </ol>
-
-                <p>
-                    These are quite intuative. The name of these functions are what they do. The first one creates an ellipse, the second a rectangle and the third a line. Although, you might be wondering what these numbers inside of them are? I will be explaining a bit what they do, they are quite easy to understand but lets start off with ellipse and rect since the numbers do the same.
-                </p>
-
-                <ol class="code-segment rounded">
-                    <li>ellipse(100, 100, 100, 100);</li>
-                    <li>rect(100, 100, 100, 100);</li>
-                </ol>
-
-                <p>
-                    So. The numbers inside of them, in order, is the position x and y, the width and height. In other words, the first one deals with where the ellipse/rectangle will be from left to right. The second number deals with the same thing but from top to bottom. The third number deals with the width. And last but not least, height. All of these numbers are called parameters. Some of them aren't necessarily numbers but for others(incuding these three functions), they are numbers it is asking for. Lets see how the line function works now.
-                </p>
-
-                <ol class="code-segment rounded">
-                    <li>line(100, 100, 200, 200);</li>
-                </ol>
-
-                <p>
-                    For the line function, you might have noticed that i have different numbers for the last two parameters. I will explain why in just a moment. Anyways, the first parameter deals with where the first point of the line will be on the x-axis(from left to right). The second parameter is for the y-axis(top to bottom). Now, lets get on with the other two parameters, this is where the line function gets different from the ellipse/rect functions. The line function requires you to essentially choose the location of two points on the screen, what it then does is draw everything in between. So, the first part of it tells Javascript to make a point at 100, 100(x then y). It then asks you to put the coordinates for the second point, of which i chose 200, 200(x then y again). Quite simple, it is just different from the other two.
-                </p>
-
-                <p>
-                    Now that were done making a line, how about we see some things we can change for it. For lines, there is this neat function which allow you to change the width of it, since as you might have noticed, its quite a small line... Anyways, there is this function called strokeWeight which allows you to change the thickness of the line. To make it work, you simply call the function and specify the width(in pixels) of the line. Just make sure to have it on top of the line. So like this!
-                </p>
-
-                <ol class="code-segment rounded">
-                    <li>strokeWeight(33);</li>
-                </ol>
-
-                <p>
-                    Before we start with the next lesson, there is actually one more thing that i had learned this week. We learned how to color shapes. For coloring, there are actually two functions you can use. Lets start with background. Background is pretty self explanatory, it deals with the background of the canvas. As for the second function, it is fill and it changes the color of the shapes after it. While background simple changes the color of the background, fill actually changes the color for every shape beneath it, so it is very important that you always specify the color unless its the same as the color used above. Although, before showing how to do that, i just need to mention that you cannot use fill to color lines. Lines are special and require a function of their own. This function is called stroke and works exactly the same as fill.
-                </p>
-
-                <p>
-                    Now, before showing an example of how to use them, i first need to mention how you specify the color. Without a color for both, it just causes an error. So, in programming we have this thing called am RGB value. RGB is an acronym and is actually what deals with the color. RGB stands for, Red green blue. Now, how does this work? Simple, you specify three numbers, each being associated with a color. In other words, in a function which requires a color, you simply put a number between 0-255 for red, green and blue in that order seperated by a comma. 255, 255, 255 would be white and 0,0,0 would be black. Any color between that could be the color you are searching for. If you need help with the color, there are tons of color pickers on the internet which all tell you the RGB value. Anyways, lets see what we can do with what we just learned.
-                </p>
-
-                <ol class="code-segment rounded">
-                    <li>Background(255, 0, 0);</li>
-                    <li></li>
-                    <li>strokeWeight(30);</li>
-                    <li>stroke(255, 255, 255);</li>
-                    <li>line(100, 100, 200, 100);</li>
-                    <li></li>
-                    <li>fill(0, 255, 0);</li>
-                    <li>rect(100, 50, 50, 50);</li>
-                    <li>elipse(50, 50, 50, 50);</li>
-                    <li></li>
-                    <li>fill(0, 0, 255);</li>
-                    <li>elipse(100, 50, 50, 50);</li>
-                </ol>
-
-                <p>
-                    Now we should  be good to go to the next lesson!
-                </p>
+                <a href="/updates/CSE1110/week1.docx" download>Week 1</a>
+                <a href="/updates/CSE1110/week2.docx" download>Week 2</a>
+                <a href="/updates/CSE1110/week3.docx" download>Week 3</a>
+                <a href="/updates/CSE1110/week4.docx" download>Week 4</a>
+                <a href="/updates/CSE1110/week5.docx" download>Week 5</a>
+                <a href="/updates/CSE1110/week6.docx" download>Week 6</a>
+                <a href="/updates/CSE1110/week7.docx" download>Week 7</a>
+                <a href="/updates/CSE1110/week8.docx" download>Week 8</a>
+                <a href="/updates/CSE1110/week9.docx" download>Week 9</a>
             </div>
         </div>
         <div class="footer-wrapper">	
