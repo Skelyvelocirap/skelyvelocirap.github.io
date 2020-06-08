@@ -78,9 +78,22 @@
                 </p>
                 <ol class="code-segment rounded">
                 	<li>draw = function() {</li>
-                	<li class="comment">//Blah blah blah, just random function stuff here</li>
+                	<li class="comment">	//Blah blah blah, just random function stuff here</li>
                 	<li>}</li>
                 </ol>
+                <p>
+                	Although this is the most important part to animation, this is not the only. At this point, if you put anything in the function(such as create a rectangle), nothing will happen that isn't normal. Now, if you want the rectangle to move across the screen, you will need 3 things. A variable, increasing the variable, use a variable for the position of the rectangle. First off, simply create the variable like normal. Although... the value you give to the variable will be the starting position of the rectangle. Just make sure to create the variable outside of the function. If the variable is inside the function the variable will be recreated everytime, rendering this useless as it will not change. After that, you simply want to create whatever it is you want to make and simply feed the variable instead of the position. After all that is done, you simply want to increase the variable by any number. The lower the slower. Try adjusting by 2 and change the speed acordingly, the 2 is just to see how fast this goes so you can make an aproximation of the speed you actually want. This is how it should look
+                </p>
+                <ol class="code-segment rounded">
+                	<li>Var x = 0;</li>
+                	<li>draw = function() {</li>
+                	<li>	rect(x, 100, 100, 100);</li>
+                	<li>	x = x + 2;</li>
+                	<li>}</li>
+                </ol>
+                <p>
+                	Sweet! Now you get to see a square mo-... get bigger???? This is weird. Instead of moving, the square got bigger. The variable is in the correct spot, there is just one small issue with this. This "draw" function simply draws on the screen as the name suggests. Spoted the issue? This simply creates a square 2 pixels to the rigth everytime but it doesn't remove the one before. The answer... background. You need to add the "background" function inside of the draw function, this will redraw the background everytime, essentially creating a blank canvas everytime. Simply make sure that it is the same colour as before or else it will change the colour.
+                </p>
             </div>
         </div>
         <div class="footer-wrapper">	
