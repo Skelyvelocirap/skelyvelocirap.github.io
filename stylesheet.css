@@ -181,6 +181,10 @@ body {
 	border: 5px solid black;
 }
 
+.comment {
+	color: rgb(150,150,150);
+}
+
 .code-segment li::before {
 	content: counter(li);
 	border-right: 5px solid  black;
