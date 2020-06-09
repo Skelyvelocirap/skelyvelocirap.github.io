@@ -49,23 +49,60 @@
            	<br><br>
            	<a href="cse_1010_content_2.html" class="nav-link-wrapper">Variables & Animations</a>
            	<br><br>
-           	<a href="cse_1010_content_3.html" class="nav-link-wrapper active-nav-link">Interaction</a>
+           	<a href="cse_1010_content_3.html" class="nav-link-wrapper active-nav-link">Interaction & Text</a>
            	<br><br>
-           	<a href="cse_1010_content_4.html" class="nav-link-wrapper">Text & strings</a>
+           	<a href="cse_1010_content_4.html" class="nav-link-wrapper">Functions & Logic statements</a>
            	<br><br>
-           	<a href="cse_1010_content_5.html" class="nav-link-wrapper">Functions & Logic statements</a>
-           	<br><br>
-           	<a href="cse_1010_content_6.html" class="nav-link-wrapper">Debugging & looping</a>
+           	<a href="cse_1010_content_5.html" class="nav-link-wrapper">Debugging & looping</a>
             <br><br>
-           	<a href="cse_1010_content_7.html" class="nav-link-wrapper">Arrays</a>
+           	<a href="cse_1010_content_6.html" class="nav-link-wrapper">Arrays</a>
            	<br><br>
-           	<a href="cse_1010_content_8.html" class="nav-link-wrapper">Objects & O.O.P</a>
+           	<a href="cse_1010_content_7.html" class="nav-link-wrapper">Objects & O.O.P</a>
         </div>
 		<div class="content-wrapper-cse1010">
             <div class="content-paragraph">
-                <h1 class="section-header">Interaction</h1>
+                <h1 class="section-header">Interaction & Text</h1>
                 <p>
-                    
+                    Next up! Interaction! This is going to be quite a quick section. Anyways. Now, what do i mean by interaction? By interaction, I mean that you can use the position of your mouse to affect... anything really. To do so, there are these 2 very neat functions. "MouseX" and "MouseY". As the name suggests, these functions allow you to get the X and Y(respectively) coordinates of your mouse. In other words, you can get a specific axis of the current position of your mouse. This is useful because it allows you to move objects to the position of your mouse, simple pass the function instead of a number and it will move there. Something a little like this should do the trick.
+                </p>
+                <ol class="code-segment rounded">
+                  <li>draw = function(){</li>
+                  <li>background(255,255,255);</li>
+                  <li>rect(MouseX, MouseY, 100, 100);</li>
+                  <li>}</li>
+                </ol>
+                <p>
+                  I did not mention this but make sure it is inside of the draw function, or else it will only draw once. Although, now it should follow your mouse, have fun! Although, here is something that will be even more fun. Instead of using the mouse for the position, set the position to a fixed amount and instead use the mouse for size!
+                </p>
+                <p>
+                  The next thing that we have learned about is also quite quick. We learned about Strings. Strings are simply text variables. These allow you to hold text for later use. Making a string is quite simple. You just need to make a normal variable but instead of a number you put double quotes and the text inside. Like this for example!
+                </p>
+                <ol class="code-segment rounded">
+                  <li>Var MyString = "I am a string";</li>
+                </ol>
+                <p>
+                  There we go, we have a string! Now, what are these strings for? They are used for a new function. This function is called, "text". This function is quite simple, both in what it does and how you use it. This function simply makes text appear on the screen. Although, you need to specify where and what the text is. This is where strings come in handy. All you need to do is give a string/string variable and the x-y positions. It should look something like this.
+                </p>
+                <ol class="code-segment rounded">
+                  <li>Var MyString = "I am a string";</li>
+                  <li>text(MyString, 100, 100);</li>
+                  <li></li>
+                  <li>text("I am also a string", 100, 200);</li>
+                </ol>
+                <p>
+                  Hmmmm, why is nothing on the screen? Thats right! They are both white! White on white is not very visible so i suggest changing the color or either the background or the text. To change the color of the text, you simply use fill before it with the correct colour. Just like any other shape. Now we can see it, although its a bit small. Lets fix that by using "textSize". Simply give it a number(in pixels) and it will change the size! Overall, it should look something like this.
+                </p>
+                <ol class="code-segment rounded">
+                  <li>fill(0,0,0);</li>
+                  <li>fontSize(30);</li>
+                  <li></li>
+                  <li>Var MyString = "I am a string";</li>
+                  <li>text(MyString, 100, 100);</li>
+                  <li></li>
+                  <li>text("I am also a string", 100, 200);</li>
+                </ol>
+                <p>
+                  There we go, we can now see two different texts on the screen, both being black and of size 30. You might have noticed that we didn't put them in a draw function, this is because we simply want it drawn once, no need to repeat it on the screen, although feel free to do so. Anyways, that should be it for this section!
                 </p>
             </div>
         </div>
