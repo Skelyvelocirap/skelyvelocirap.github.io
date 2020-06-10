@@ -63,7 +63,28 @@
             <div class="content-paragraph">
                 <h1 class="section-header">Functions & Logic statements</h1>
                 <p>
-                    
+                    Functions! Functions are extremely useful! Much like variables, it allows you to store data for later use. Instead of storing a value, functions store different functions(such as other functions you made or functions such as rect). With these functions, you can essentially do things such as create a house and call it multiple times to create maybe an entire city. In the function, you can make a rectangle for the house, other rectangles for the windows, triangles for the roof etc... You then simply call the function and it makes the house for you as many times as you call it. Creating a function is simply done by creating a variable but the value is "function()" followed by brackets. Inside of the parenthesis, you simply add parameters that can be used as variables. You than simple call the function. To call a function, you simply type the name of the function(It is case sensitive) followed by parenthesis along with any parameter if any are present. These are examples of what they should look like.
+                </p>
+                <ol class="code-segment rounded">
+                  <li>var myFunction = function(){</li>
+                  <li class="comment">//Anything you want to run everytime the function is called goes in here</li>
+                  <li class="comment">//Example \/</li>
+                  <li>rect(100,100,100,100);</li>
+                  <li>}</li>
+                  <li></li>
+                  <li>myFunction();</li>
+                </ol>
+                <ol class="code-segment rounded">
+                  <li>var alsoAFunction = function(position, size){</li>
+                  <li class="comment">//Anything you want to run everytime the function is called goes in here</li>
+                  <li class="comment">//Example \/</li>
+                  <li>rect(position, position, size, size)</li>
+                  <li>}</li>
+                  <li></li>
+                  <li>alsoAFunction(100, 100);</li>
+                </ol>
+                <p>
+                  Both of these functions are doing the same thing. The only difference is that you instead have to change the value fed to the function instead of the rectangle dirrectly. In the second example, "position" and "size" act just like variables, you can reuse them as many times as you want. You can also feed variables to the function instead of dirrectly giving it numbers.
                 </p>
             </div>
         </div>
