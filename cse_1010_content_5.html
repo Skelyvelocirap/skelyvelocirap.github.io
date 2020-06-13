@@ -63,7 +63,23 @@
             <div class="content-paragraph">
                 <h1 class="section-header">Debugging & looping</h1>
                 <p>
-                    
+                    In this section, I have learned about something called debugging and have also learned how to create loops(such as the one used in the draw function). Lets start off with debugging! Debuggin is extremely simple, it is simply the process of finding errors in your code and fixing those errors. There are multiples kind of errors, although misspelling(for code specifically, not grammar) is something you should not get too much of if you are using an IDE(Integrated Development Environt) instead of a text editor. Anyways, misspelling is the most prevailent kind of errors, although, functions not running or part of the code not executing properly are also some common issues, with debuggin, we are going to try and solve the second issue.
+                </p>
+                <p>
+                  One common issue is that part of the code is not executing. This usually tends to happen when using logic statements(if statements). That is the case because one issue is that you tend using the wrong operator. As for functions, they usually fail to execute because of misspelling. Anyways, there is a way to fix absolutely every problem in your code! println(). What this does is simply send text to the console(This is where any information is logged, here is a website for more information on that..."https://www.digitalocean.com/community/tutorials/how-to-use-the-javascript-developer-console"). Why is printing text to the console useful? Simple, if the text is shown, it means that the program ran up to that point, if not than it stopped somewhere before. Try spreading a few of these scattered to where you think it might stop working. Anyways, to use them, you simply type the function and give it some text in between the parenthesis and it will log that text. I would suggest having each println() display different text when using multiple as it might be hard to find out what works and what does not if they all say the same thing. Anyways, here is what your code might look like!
+                </p>
+                <ol class="code-segment rounded">
+                  <li>var myBool = false;</li>
+                  <li class="comment">//Lets just say it should be true and we gave it the wrong value</li>
+                  <li>if(myBool === true){</li>
+                  <li>println("This should print");</li>
+                  <li class="comment">//Blah blah blah, just the code that should run</li>
+                  <li>} else {</li>
+                  <li>println("This should NOT run!");</li>
+                  <li>}</li>
+                </ol>
+                <p>
+                  Now, the above code was purposefully given an error, but anyways, this should log the text..."This should NOT run!". This way, you know that it is an issue with the if statement. You might check the condition and notice that the condition(or variable) should be changed around for it to work properly.
                 </p>
             </div>
         </div>
