@@ -129,8 +129,29 @@
                   "||" or
                 </p>
                 <p>
-                  All of these operators help to decide how you want to check the value. Is it bigger than the second value? Is this correct AND is this as well? This is what these do. Although, before we move on to the next section, there is one more thing i need to show.
+                  All of these operators help to decide how you want to check the value. Is it bigger than the second value? Is this correct AND is this as well? This is what these do. Although, before we move on to the next section, there is one more thing i need to show. This is not exactly to do with this but it can deffinitely help. These are a few "math functions" that could help check things, lets first start off with random. Random is a way to generate a random number between(and including) the numbers specified in the parenthesis. To do so, you simply create a variable(or just use it instead of a variable), but instead of giving it a number as value, use "random()" as a value with 2 numbers inside the parenthesis. A bit like this!
                 </p>
+                <ol class="code-segment rounded">
+                  <li>var randomInt = random(0, 100);</li>
+                </ol>
+                <p>
+                  This above will create a variable called "randomInt" and set the value to be any number between(including) 0 and 100. This when used with if statements could be used to give a random reward to someone depending on if the random number is the correct number. As a quick side note though, this does give a decimal value, so you do need to round it. For this, there are two functions... Floor, and ceil. These are quite simple, they return the rounded value of what you put in the parenthesis inside of them. The only difference between the 2 is that floor rounds down and ceil rounds up. There is no functoin for rounding to the nearest integer, although you can add 0.5 to the value given and use that for floor. This is what it should all look like! 
+                </p>
+                <ol class="code-segment rounded">
+                  <li class="comment">//Flooring</li>
+                  <li>var randomInt = random(0, 100);</li>
+                  <li>randomInt = floor(randomInt);</li>
+                </ol>
+                <ol class="code-segment rounded">
+                  <li class="comment">//Ceiling</li>
+                  <li>var randomInt = random(0, 100);</li>
+                  <li>randomInt = ceil(randomInt);</li>
+                </ol>
+                <ol class="code-segment rounded">
+                  <li class="comment">//Rounding</li>
+                  <li>var randomInt = random(0, 100);</li>
+                  <li>randomInt = floor(randomInt + 0.5);</li>
+                </ol>
             </div>
         </div>
         <div class="footer-wrapper">	
