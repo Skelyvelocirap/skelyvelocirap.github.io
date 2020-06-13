@@ -13,20 +13,16 @@
 				<div class="nav-link-wrapper">
 					<a href="index.html">Home</a>
 				</div>
-
 				<div class="nav-link-wrapper active-nav-link">
 					<a href="cse_1010.html">CSE1010</a>
 				</div>
-
 				<div class="nav-link-wrapper">
 					<a href="cse_1110.html">CSE1110</a>
 				</div>
-                
-                <div class="nav-link-wrapper">
-                    <a href="updates.html">Weekly Updates</a>
-                </div>
+          <div class="nav-link-wrapper">
+              <a href="updates.html">Weekly Updates</a>
+          </div>
 			</div>
-            
             <div class="middle">
                 <div class="nav-logo-wrapper">
                     <p class="nav-logo">
@@ -34,14 +30,12 @@
                     </p>
                 </div>
             </div>
-            
 			<div class="right-side">
 				<div class="author">
 					<div>NEO SOMMER</div>
 				</div>
 			</div>
 		</div>
-        
         <div class="side-bar-wrapper">
             <a href="cse_1010.html" class="nav-link-wrapper">Introduction</a>
             <br><br>
@@ -85,6 +79,57 @@
                 </ol>
                 <p>
                   Both of these functions are doing the same thing. The only difference is that you instead have to change the value fed to the function instead of the rectangle dirrectly. In the second example, "position" and "size" act just like variables, you can reuse them as many times as you want. You can also feed variables to the function instead of dirrectly giving it numbers.
+                </p>
+                <p>
+                  Next up on the list, logic statements. These guys are whats truely behind anything. As the name suggests, it deals with the logic. Say you want text to appear only once a variable hits a very specific number, logic statements can help you with that. There really only is 3 things you need to know to use them, lets start. To make your first logic statement, simply type this...
+                </p>
+                <ol class="code-segment rounded">
+                  <li>var theNumber = 0</li>
+                  <li class="comment">//Yes, very creative i know</li>
+                  <li>if(theNumber == 10){</li>
+                  <li>  text("Yay! The value is now ten!");</li>
+                  <li>}</li>
+                </ol>
+                <p>
+                  So, what this does is create a variable called "theNumber". It then checks wether or not the condition in the paranthesis is true, in this case asking if "theNumber" is 10. If it isn't, than nothing happens. Although, if the value is 10 than it will run anything in the brackets, in this case being displaying the text. Obviously this could be used for so much more than saying that the value is 10, this is what is behind any bit of logic, along with the two other things which work in corrolation with "if". Lets go ahead and see the second thing.
+                </p>
+                <ol class="code-segment rounded">
+                  <li>var theNumber = 0</li>
+                  <li class="comment">//Yes, very creative i know</li>
+                  <li>if(theNumber == 10){</li>
+                  <li>  text("Yay! The value is now ten!");</li>
+                  <li>} else {</li>
+                  <li>  text("Ehh, not quite there yet!");</li>
+                  <li>}</li>
+                </ol>
+                <p>
+                  This might seem similar but trust me, its not. I simply had to reuse part of the code before. Anyways, you might spot there is 1 extra thing added. After closing the brackets for "If"(This is called an If statement by the way), there is "else"(else stattement) written. What this does is simply say, if any of the above condition is not true than you run this part. If you were to simply add the text after the brackets, it would run wether the condition is correct or not. The last thing we learned with these is this.
+                </p>
+                <ol class="code-segment rounded">
+                  <li>var theNumber = 0</li>
+                  <li class="comment">//Yes, very creative i know</li>
+                  <li>if(theNumber == 10){</li>
+                  <li>  text("Yay! The value is now ten!");</li>
+                  <li>} else if(theNumber == 20) {</li>
+                  <li>  text("Not what i originally wanted but 20 is still fine!");</li>
+                  <li>} else {</li>
+                  <li>  text("Ehh, not quite there yet!");</li>
+                  <li>}</li>
+                </ol>
+                <p>
+                  Once again, we added 1 more thing to the code above. This time, look right after the first else statement, you might see that we have written "if". This is called an else-if statement, what it does is if the first condition is not true, than it checks this one. You can have as many else-if statements as you'd like. Most commonly, you will want to put an else statement at the end but that simply depends on what you need it to do. One last thing for this section, you might have noticed that we have 2 equal signs instead of 1. This is because these are called operators. Operators are simply there to say how it should check the value. I didn't explain it well but hopefully this should.
+                </p>
+                <p>
+                  "===" Equal in value and type<br>
+                  "==" Equal in value only<br>
+                  "!" not equal to<br>
+                  ">" greater than<br>
+                  "<" less than<br>
+                  "&&" and<br>
+                  "||" or
+                </p>
+                <p>
+                  All of these operators help to decide how you want to check the value. Is it bigger than the second value? Is this correct AND is this as well? This is what these do. Let's go to the next section! :D
                 </p>
             </div>
         </div>
