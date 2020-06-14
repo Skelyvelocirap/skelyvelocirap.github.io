@@ -63,9 +63,101 @@
             <div class="content-paragraph">
                 <h1 class="section-header">Objects & O.O.P</h1>
                 <p>
-                    In this section, we have learned what Objects are and how to use them to draw. Let's first look at what they are. Objects are
+                    In this section, we have learned what Objects are and how to use them to draw. Let's first look at what they are. Objects are very similar to arrays. The differences are how you use them, that objects can store other objects and arrays inside. Let's take a look at how to use them.
                 </p>
-            </div>
+                <ol class="code-segment rounded">
+                  <li>var anObject = {</li>
+                  <li>course: "computer science",</li>
+                  <li>level: "2",</li>
+                  <li>completed: {</li>
+                  <li>level1: "CSE1010",</li>
+                  <li>level2: "CSE1110"</li>
+                  <li>}</li>
+                  <li>};</li>
+                </ol>
+                 <p>
+                  There we go. The code above should now have create an object, called "anObject". Anything inside of the brackets are simply part of the object, much like how an array holds its elements inside square brackets. As you can see though, we have a secodn object inside of the first, the second object is called "completed". It works the exact same way as a normal object, it is simply inside of the first one. Anyways, how would I access those values? Quite simple, simply type the name of the object, a dot and add the element(or the second object if it is nested). A bit like this!
+                </p>
+                <ol class="code-segment rounded">
+                  <li>println(anObject.level);</li>
+                  <li>println(anObject.completed.level1);</li>
+                </ol>
+                <p>
+                  These should now display the correct values! The first displaying "2" and the second displaying "CSE1010". As you can see, they are quite simple to use! Although, lets now move on to using objects to draw! Let's quickly make two objects, 1 for an adult and 1 for a child...
+                </p>
+                <ol class="code-segment rounded">
+                  <li>var childObject = {</li>
+                  <li>name: "Ken",</li>
+                  <li>age: 5,</li>
+                  <li>xPos: 100,</li>
+                  <li>yPos: 100</li>
+                  <li>}</li>
+                  <li>var adultObject = {</li>
+                  <li>name: "Jhon",</li>
+                  <li>age: 23,</li>
+                  <li>xPos: 200,</li>
+                  <li>yPos: 100</li>
+                  <li>}</li>
+                </ol>
+                <p>
+                  There we go, we have our two objects. Now, what are those for? Well, as you can see, we mentioned a name, age, and x/y position. This is because we are going to be using those two objects to draw. Let's go ahead and draw these two on the screen...
+                </p>
+                <ol class="code-segment rounded">
+                  <li>var drawPerson = function(person) {</li>
+                  <li>fill(255, 0, 0);</li>
+                  <li>var img = getImage("creatures/Winston");</li>
+                  <li class="comment">//This image is only avaiable on khan academy, you might have to specify the path of your own when not using it.</li>
+                  <li>image(img, person.xPos, person.yPos);</li>
+                  <li>var txt = person.name + "," + person.age;</li>
+                  <li>text(txt, person.xPos, person.yPos + 20);</li>
+                  <li>};</li>
+                  <li></li>
+                  <li>drawPerson(childObject);</li>
+                  <li>drawPerson(adultObject);</li>
+                </ol>
+                <p>
+                  There we go, we should see two different people on the screen now! This is very cool, although, it does seem like we just wasted a lot of our time. What i mean by that is... look at the objects. They are the same thing, the only difference is the values(actual values, not value names) and the names of the object. We just repeated code. That is a horible thing to do when programming. In computer science, there is this acronym. DRY. It stands for, Don't repeat yourself. What did we do? We broke that rule! Although, there is a way to fix this. We can do so by using methods. Methods are essentially like presets.  You make a preset and you can create new objects from that. Let's try using those.
+                </p>
+                <ol class="code-segment rounded">
+                  <li>var person = function(name, age, xPos, yPos) {</li>
+                  <li>this.name = name;</li>
+                  <li>this.age = age;</li>
+                  <li>this.xPos = xPos;</li>
+                  <li>this.yPos = yPos;</li>
+                  <li>};</li>
+                  <li class="comment">// This above is our preset</li>
+                  <li>person.prototype.draw = function() {</li>
+                  <li>fill(255, 0, 0);</li>
+                  <li>var img = getImage("creatures/Winston");</li>
+                  <li>image(img, person.xPos, person.yPos);</li>
+                  <li>var txt = person.name + "," + person.age;</li>
+                  <li>text(txt, person.xPos, person.yPos + 20);</li>
+                  <li>};</li>
+                  <li></li>
+                  <li>var childObject("Ken", 5, 100, 100);</li>
+                  <li>var adultObject("Jhon", 23, 100, 200);</li>
+                  <li></li>
+                  <li>childObject.draw();</li>
+                  <li>adultObject.draw();</li>
+                </ol>
+                <p>
+                  There we go. Now, why does this work? Simple, for objects, there is this thing called prototype. This essentially is there to say, use this as a preset. It than creates a function called draw for this preset. What it then does is simply set the values given to the preset and makes a new object out of it. Then the function simply gets the values and uses them. Just that simple. Now, lets say you want them to say something. We can use object inheritance for that. Object inheritance is simply a way to give those methods(or presets) functions they can use. What you do than is you can call it from any object that uses this specific method. Let's see how to use that using a function called talk that we will make.
+                </p>
+                <ol class="code-segment rounded">
+                  <li>person.prototype.talk = function() {</li>
+                  <li>text(txt, this.xPos, this.yPos + 10);</li>
+                  <li>};</li>
+                </ol>
+                <p>
+                  Now, instead of having the text be in the function and always the same, we can use those methods to change it! To call it, you simple type the objects name followed by a dot and the functions name, in this case it would be like this.
+                </p>
+                <ol class="code-segment rounded">
+                  <li>person.talk();</li>
+                </ol>
+                <p>
+                  And there we go! This marks off the end of the unit!
+                </p>
+            </div> 
         </div>
         <div class="footer-wrapper">	
             <footer>
