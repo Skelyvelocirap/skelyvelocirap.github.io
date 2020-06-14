@@ -55,7 +55,7 @@
            	<br><br>
            	<a href="cse_1010_content_5.html" class="nav-link-wrapper active-nav-link">Debugging & looping</a>
             <br><br>
-           	<a href="cse_1010_content_6.html" class="nav-link-wrapper">Arrays</a>
+           	<a href="cse_1010_content_6.html" class="nav-link-wrapper">Arrays & Formating</a>
            	<br><br>
            	<a href="cse_1010_content_7.html" class="nav-link-wrapper">Objects & O.O.P</a>
         </div>
@@ -76,10 +76,30 @@
                   <li class="comment">//Blah blah blah, just the code that should run</li>
                   <li>} else {</li>
                   <li>println("This should NOT run!");</li>
+                  <li class="comment">//More code if needed</li>
                   <li>}</li>
                 </ol>
                 <p>
-                  Now, the above code was purposefully given an error, but anyways, this should log the text..."This should NOT run!". This way, you know that it is an issue with the if statement. You might check the condition and notice that the condition(or variable) should be changed around for it to work properly.
+                  Now, the above code was purposefully given an error, but anyways, this should log the text..."This should NOT run!". This way, you know that it is an issue with the if statement. You might check the condition and notice that the condition(or variable) should be changed around for it to work properly. And there you go, your first debuged program :D
+                </p>
+                <p>
+                  Let's now take a look at loops. Loops are simply there to repeat lines of code, this is what the draw function does. Anyways, we have learned about 2 different kinds of loops, for loops and while loops. Both behave aproximately the same but some are better used for specific cases. For loops are usually used for repeating code a set ammount of times. A while loop is usually used to repeat something indefinitely Let's start off with the for loop. A for loops is a way to repeat code until the condition is false, although, for loops automatically increment the value. This is what a for loop should look like.
+                </p>
+                <ol class="code-segment rounded">
+                  <li>for(var y = 0; y >= 400; y++){</li>
+                  <li class="comment">//blah blah blah, code goes here</li>
+                  <li>}</li>
+                </ol>
+                <p>
+                  There we go, now this will run the code 400 times. Anyways, this is how it works. The for loop creates a variable called y and gives it a value of 0, it then checks if y is bigger or equal to 400. If it is than it stops, if not than it simply runs the code and adds 1 to y. Let's now take a look at the while loop.
+                </p>
+                <ol class="code-segment rounded">
+                  <li>while(true){</li>
+                  <li class="comment">//Code goes here</li>
+                  <li>}</li>
+                </ol>
+                <p>
+                  Now we have a while loop! How it works is simply check if the condition is true, if it is then it runs the code. If the condition is false, than it stops the loop. The reason this works is that when checking for booleans(this also applies to logic statements) it checks if the boolean is true. In this case, it checks if true is true, and because it is, it continues running. There we go, your loop now repeats indefinitely.
                 </p>
             </div>
         </div>
