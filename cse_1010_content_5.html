@@ -63,10 +63,10 @@
             <div class="content-paragraph">
                 <h1 class="section-header">Debugging & looping</h1>
                 <p>
-                    In this section, I have learned about something called debugging and have also learned how to create loops(such as the one used in the draw function). Lets start off with debugging! Debuggin is extremely simple, it is simply the process of finding errors in your code and fixing those errors. There are multiples kind of errors, although misspelling(for code specifically, not grammar) is something you should not get too much of if you are using an IDE(Integrated Development Environt) instead of a text editor. Anyways, misspelling is the most prevailent kind of errors, although, functions not running or part of the code not executing properly are also some common issues, with debuggin, we are going to try and solve the second issue.
+                    In this section, I have learned about something called debugging and have also learned how to create loops(such as the one used in the draw function). Let's start off with debugging! Debugging is extremely simple, it is simply the process of finding errors in your code and fixing those errors. There are multiples kinds of errors, although misspelling(for code specifically, not grammar) is something you should not get too much of if you are using an IDE(Integrated Development Environment) instead of a text editor. Anyways, misspelling is the most prevalent kind of errors, although, functions not running or part of the code not executing properly are also some common issues, with debugging, we are going to try and solve the second issue.
                 </p>
                 <p>
-                  One common issue is that part of the code is not executing. This usually tends to happen when using logic statements(if statements). That is the case because one issue is that you tend using the wrong operator. As for functions, they usually fail to execute because of misspelling. Anyways, there is a way to fix absolutely every problem in your code! println(). What this does is simply send text to the console(This is where any information is logged, here is a website for more information on that..."https://www.digitalocean.com/community/tutorials/how-to-use-the-javascript-developer-console"). Why is printing text to the console useful? Simple, if the text is shown, it means that the program ran up to that point, if not than it stopped somewhere before. Try spreading a few of these scattered to where you think it might stop working. Anyways, to use them, you simply type the function and give it some text in between the parenthesis and it will log that text. I would suggest having each println() display different text when using multiple as it might be hard to find out what works and what does not if they all say the same thing. Anyways, here is what your code might look like!
+                  One common issue is that part of the code is not executing. This usually tends to happen when using logic statements(if statements). That is the case because one issue is that you tend using the wrong operator. As for functions, they usually fail to execute because of misspelling. Anyways, there is a way to fix absolutely every problem in your code! println(). What this does is simply send text to the console(This is where any information is logged, here is a website for more information on that..."https://www.digitalocean.com/community/tutorials/how-to-use-the-javascript-developer-console"). Why is printing text to the console useful? Simple, if the text is shown, it means that the program ran up to that point, if not then it stopped somewhere before. Try spreading a few of these scattered to where you think it might stop working. Anyways, to use them, you simply type the function and give it some text in between the parenthesis and it will log that text. I would suggest having each println() display different text when using multiple as it might be hard to find out what works and what does not if they all say the same thing. Anyways, here is what your code might look like!
                 </p>
                 <ol class="code-segment rounded">
                   <li>var myBool = false;</li>
@@ -80,10 +80,10 @@
                   <li>}</li>
                 </ol>
                 <p>
-                  Now, the above code was purposefully given an error, but anyways, this should log the text..."This should NOT run!". This way, you know that it is an issue with the if statement. You might check the condition and notice that the condition(or variable) should be changed around for it to work properly. And there you go, your first debuged program :D
+                  Now, the above code was purposefully given an error, but anyway, this should log the text..."This should NOT run!". This way, you know that it is an issue with the if statement. You might check the condition and notice that the condition(or variable) should be changed around for it to work properly. And there you go, your first debugged program :D
                 </p>
                 <p>
-                  Let's now take a look at loops. Loops are simply there to repeat lines of code, this is what the draw function does. Anyways, we have learned about 2 different kinds of loops, for loops and while loops. Both behave aproximately the same but some are better used for specific cases. For loops are usually used for repeating code a set ammount of times. A while loop is usually used to repeat something indefinitely Let's start off with the for loop. A for loops is a way to repeat code until the condition is false, although, for loops automatically increment the value. This is what a for loop should look like.
+                  Let's now take a look at loops. Loops are simply there to repeat lines of code, this is what the draw function does. Anyways, we have learned about 2 different kinds of loops, for loops and while loops. Both behave approximately the same but some are better used for specific cases. For loops are usually used for repeating code a set amount of times. A while loop is usually used to repeat something indefinitely Let's start off with the for loop. A for loops is a way to repeat code until the condition is false, although, for loops automatically increment the value. This is what a for loop should look like.
                 </p>
                 <ol class="code-segment rounded">
                   <li>for(var y = 0; y >= 400; y++){</li>
@@ -91,7 +91,7 @@
                   <li>}</li>
                 </ol>
                 <p>
-                  There we go, now this will run the code 400 times. Anyways, this is how it works. The for loop creates a variable called y and gives it a value of 0, it then checks if y is bigger or equal to 400. If it is than it stops, if not than it simply runs the code and adds 1 to y. Let's now take a look at the while loop.
+                  There we go, now this will run the code 400 times. Anyways, this is how it works. The for loop creates a variable called y and gives it a value of 0, it then checks if y is bigger or equal to 400. If it is then it stops, if not then it simply runs the code and adds 1 to y. Let's now take a look at the while loop.
                 </p>
                 <ol class="code-segment rounded">
                   <li>while(true){</li>
@@ -99,7 +99,7 @@
                   <li>}</li>
                 </ol>
                 <p>
-                  Now we have a while loop! How it works is simply check if the condition is true, if it is then it runs the code. If the condition is false, than it stops the loop. The reason this works is that when checking for booleans(this also applies to logic statements) it checks if the boolean is true. In this case, it checks if true is true, and because it is, it continues running. There we go, your loop now repeats indefinitely.
+                  Now we have a while loop! How it works is simply check if the condition is true, if it is then it runs the code. If the condition is false, then it stops the loop. The reason this works is that when checking for booleans(this also applies to logic statements) it checks if the boolean is true. In this case, it checks if true is true, and because it is, it continues running. There we go, your loop now repeats indefinitely.
                 </p>
             </div>
         </div>
