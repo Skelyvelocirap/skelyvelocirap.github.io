@@ -63,8 +63,55 @@
             <div class="content-paragraph">
                 <h1 class="section-header">Arrays & Formating</h1>
                 <p>
-                    
+                    In this section, we learned what are and how to use arrays. We also learned how to properly format code, which we will start with. Formating code is quite a simple thing to do! Unfortunately, i am unable to do it myself on the website(not sure why...). Anyways, formating your code requires you to do 1 thing only. Just quickly mentioning though, why is formating code useful? Formating code is you cleaning up your code, not in the sense of errors, in the sense or readability. Reading your code is quite important as when you are learning you can look back at your code and see how it works easely, its also easier if you want to rework your code in general. Although, what is also useful about formating it is that you might need help with some part of your code, having it be formatted will greatly help others read your code making it easier on them and faster for you.
                 </p>
+                <p>
+                  Anyways, formating is really up to you for how you do it but generally it is better to follow these guide lines(although, it is still completely up to you how you want to do it). Lets start off. When using functions that require parameters, make sure to add spaces after the comma of each parameter, a bit like this.
+                </p>
+                <ol class="code-segment rounded">
+                  <li>rect(100, 100, 100, 100);</li>
+                </ol>
+                <p>
+                  Doing this simply helps to see what is what. It simply allows you to see every variable seperately. Another thing to do on the topic of variables is adding a space between equal signs(technically it is whenever there is any kind operator but most commonly it is the equal sign for variables). This should look something a little like this.
+                </p>
+                <ol class="code-segment rounded">
+                  <li>var myVar = 100;</li>
+                </ol>
+                <p>
+                  There we go. While were still on the topic of variables though, since variable names cannot have spaces, you need to find a different way of showing a different word, for example, a variable called "I love pizza" could be represented as "ILovePizza"(Capitalizing the first letter of each word) or "I-love-pizza"(hyphens in between instead of spaces). These two are examples but this part is what is the most up to you. Maybe you want a number instead of spaces, maybe nothing. This is truely up to you, more than any other of the "guidelines". In the example above though, i used capitals at the beginning of each word. Lets move on to some things about functions. When creating functions, you use curly braces to house the code inside. Well, before the curly braces you should put a space. Another thing would be to indent the code inside the braces, this really helps when you have nested things, such as functions or logic statements. Unfortunately, this is what i am unable to show, indents get removed for whatever reason, although just press tab once and it should get an indent. Anyways, this is what the first thing should look like.
+                </p>
+                <ol class="code-segment rounded">
+                  <li>var myFunction() {</li>
+                  <li class="comment">  //blah blah, code goes here. You should indent this though!</li>
+                  <li>}</li>
+                </ol>
+                <p>
+                  And there you go, these are the "guidelines" for formatting code, although as mentioned before, use these just to come up with your own way of formatting things(unless you like these and want to use them). Anyways, let's now move on to arrays!
+                </p>
+                <p>
+                  Arrays are quite simply lists of information all stored in 1 variable. Simply put, they can store multiple variables all in 1. They are extremely simple to use as well! All you have to do is simply put square brackets and put all of your information inside! Lets look at an example!
+                </p>
+                <ol class="code-segment rounded">
+                  var myArray = [42, "the answer to life, the universe and everything", true, random(0, 10000)];
+                </ol>
+                <p>
+                  There we go, our array now contains all of these values. It contains "42", "the answer to life, the universe, and everything", "true", and a random number, all in there respective data type(integer, string, boolean and random). Now, you could acutally also give it a variable instead of dirrectly typing it and it will have the same result. Anyways though, we are storing all of these values, but how do we know which 1 to use? This is quite simply. When calling the "myArray" variable, simply add square brackets along with a number inside.
+                </p>
+                <ol class="code-segment rounded">
+                  println(myArray[0]);
+                  println(myArray[1]);
+                  println(myArray[2]);
+                  println(myArray[3]);
+                </ol>
+                <p>
+                  This should now display ALL of the values from the array. Although, notice how it starts at 0 and not 1? That is because the element "0" in arrays represents "1" for us, so just count where it is and substract 1 and you've got the location of the variable in your array. As mentioned previously, arrays are simple to use and can also be used like any other variable! If you want to check wether the element 2(the boolean) is true, simply say...
+                </p>
+                <ol class="code-segment rounded">
+                  <li>if(myArray[2] === true) {</li>
+                  <li class="comment">//Code goes here</li>
+                  <li>}</li>
+                </ol>
+                <p>And there you go, you checked if it is true.</p>
             </div>
         </div>
         <div class="footer-wrapper">	
