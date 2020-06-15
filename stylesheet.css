@@ -53,6 +53,7 @@ body {
 	font-size: 20;
 	text-decoration: bold;
 	text-transform: uppercase;
+	background-color: #282828;
 }
 
 .nav-link-wrapper:hover {
