@@ -52,6 +52,7 @@ body {
 	color: red;
 	font-size: 20;
 	text-decoration: bold;
+	text-transform: uppercase;
 }
 
 .nav-link-wrapper:hover {
