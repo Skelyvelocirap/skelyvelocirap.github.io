@@ -48,6 +48,12 @@ body {
 	transition: color 0.5s;
 }
 
+.important {
+	color: red;
+	font-size: 20;
+	text-decoration: bold;
+}
+
 .nav-link-wrapper:hover {
 	border-bottom: 2px solid #FFFFFF;
 }
