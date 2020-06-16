@@ -54,6 +54,8 @@ body {
 	text-decoration: bold;
 	text-transform: uppercase;
 	background-color: #282828;
+	margin: 5px;
+	border: 5px solid black;
 }
 
 .nav-link-wrapper:hover {
