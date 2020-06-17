@@ -53,7 +53,78 @@
             <div class="content-paragraph">
                 <h1 class="section-header">CSS Tags</h1>
                 <p>
-                    
+                    Welcome back! To start off, I'm going to need you to remember back to the second section, the last section of html. Do you remember how the &ltimg&gt tag had an HTML property called height and/or width. Do you also remember how I said it suited more CSS? Well, we will learn how to do something like that for other html tags now. In CSS, there are these properties call height and width(wow, what a shocker right?). You can probably guess what they do. Anyways, simply precise the width and/or height in pixels. For anything except images, using both of them is actually just fine to do. Im doing that for multiple tags on my website. Anyways, let's take a look at what it could look like for a paragraph.
+                </p>
+                <ol class="code-segment rounded">
+                    <li>p {</li>
+                    <li>height: 100px;</li>
+                    <li>width: 500px;</li>
+                    <li>}</li>
+                </ol>
+                <p>
+                    Do you see how there is px at the end of the number? This is two specify that the amount is in pixels since there are other measurments in css. One of them being in percent. When you specify a number simply add the percent sign and that will set the element to be whatever percent of the document. The next property we learned about is a property called overflow. Say the text in a paragraph is too long for th the size you set it to. How would you fix that without changing its size? Simple... Overflow. Overflow is there too deal with all of that extra text. By default, overflow has a value of visible which will essentially just let it be. Although, if you want to completely hide overflowing text, you can simply set it to "hidden". The third and final value for Overflow is auto, this simply adds a scroling bar whenever text is overflowing. Let's set our &ltp&gt tag's text to overflow: auto...
+                </p>
+                <ol class="code-segment rounded">
+                    <li>p {</li>
+                    <li>overflow: auto;</li>
+                    <li>}</li>
+                </ol>
+                <p>
+                    See, that was easy! Now let's move on to something a little more complicated. Are you familiar with the box model? This thing.
+                    <br>
+                    <img src="computer-science-images/box-model.png">
+                    <br>
+                    Well, if not then its your lucky day. The box model is simply a way to visualize a few properties. Let's talk about all of them. First off, position. Position is something we will learn later on but what it does is simply say where the element is positioned in the document. We then have have margin. Margin is the invisible space outside of the element. You can use that to give the element a bit of space on each side. We than have border. Border is the black line you might see around the edge of some things. Then, we have padding. Padding is there to add space between border and the text. And last but not least, the text. Not too bad is it? It looks scarry the first time but once you start using it more, it will be a piece of cake. Anyways, to change around the values of those, simply type the names. A bit like this.
+                </p>
+                <ol class="code-segment rounded">
+                    <li>p {</li>
+                    <li>padding: 10px;</li>
+                    <li>border: 5px;</li>
+                    <li>padding: 50px;</li>
+                    <li>}</li>
+                </ol>
+                <p>
+                    The values can use percent as well, they aren't just limited to pixels. Anyways, what if you want to specify a specific side for it to take place?
+                </p>
+                <ol class="code-segment rounded">
+                    <li>p {</li>
+                    <li>padding-left: 10px;</li>
+                    <li>border-right: 5px;</li>
+                    <li>padding-top: 50px;</li>
+                    <li>}</li>
+                </ol>
+                <p>
+                    Seems simple enough right? A few more things about border. The default color for it is black right? Well, if you simply add a color after the amount. You can also change it to be dotted, double lined, etc... You simply mention that after the color. The default is solid but these are all of the values.
+                </p>
+                <table>
+                    <tr>
+                        <thead>Value</thead>
+                        <thead>Description</thead>
+                    </tr>
+                    <tr>
+                        <td>solid</td>
+                        <td>A solid line</td>
+                    </tr>
+                    <tr>
+                        <td>dotted</td>
+                        <td>A dotted line</td>
+                    </tr>
+                    <tr>
+                        <td>dashed</td>
+                        <td>A dashed line</td>
+                    </tr>
+                    <tr>
+                        <td>double</td>
+                        <td>Two lines instead of 1 solid line</td>
+                    </tr>
+                </table>
+                <ol class="code-segment rounded">
+                    <li>p {</li>
+                    <li>border: 5px green dotted;</li>
+                    <li>}</li>
+                </ol>
+                <p>
+                    There we go. We changed the border to be 5 pixels in width, be green and be dotted. This also marks the end of this section.
                 </p>
             </div>
         </div>

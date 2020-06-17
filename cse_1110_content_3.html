@@ -53,8 +53,57 @@
             <div class="content-paragraph">
                 <h1 class="section-header">Starting off with CSS</h1>
                 <p>
-                    What is CSS? Cascading Style Sheet, or CSS for short, is a way of making your sites look much better.
+                    What is CSS? Cascading Style Sheet, or CSS for short, is a way of making your sites look much better. This entire site is littered with CSS, everywhere! Even this text! Anyways, incorporating CSS in your webpage is extremely easy, although there are two ways. Let's take a look at the first and easiest. This way is to make a separate file(in CSS) and linking that to the webpage. This might seem complicated but it's extremely easy and only requires you to make a file and 1 line of HTML. Once you made the ".css" file simply link it by adding an HTML line at the top of the document(the html one). This line is this.
                 </p>
+                <ol class="code-segment rounded">
+                    <li>&ltlink rel="stylesheet" type="text/css" href="cssFileNameGoesHere.css"&gt</li>
+                </ol>
+                <p>
+                    Once you replace "cssFileNameGoesHere" with the actual files name your all set. You can now add CSS to your website. Just make sure to link the CSS file to every webpage of your website and not just to a single page. Although, the second way is to write the CSS inside of a parameter in HTML called "style". The CSS in there will do the same as just the CSS file but without the selector needed. The downside to using this way is that it is much less clean, and you cannot re-use the code, you have to write it in the "style" parameter of every single element you want to change. It should look something like this for a paragraph.
+                </p>
+                <ol class="code-segment rounded">
+                    <li>&ltp style="background:red;"&gtThis is my paragraph&lt/p&gt</li>
+                </ol>
+                <p>
+                    There we go, now you can add CSS. I would recommend using the first method but that is just personal preference. Anyways, let's start with the actual CSS. If you remember from the last section I mentioned something about selectors. If you don't well you should re-read it but here is a quick reminder. Selectors are simply a way to select specific parts of html for CSS to use. We learned about selecting by id and by class and I said I would mention later for how to select by type. This time, let's take a look at how to select by type. It's really simple. You know how html is just the tag name surrounded by these two signs... "<", and ">"? Well, simply don't use those signs, just use the tags name. So, for a paragraph, it should look something like this.
+                </p>
+                <ol>
+                    <li>p {</li>
+                    <li>}</li>
+                </ol>
+                <p>
+                    Now, anything between the brackets is what you want to change about the paragraph tags(all of them). You can do that for any type of element, simply put the tags name, the value, a semicolon and there you go. Now, let's take a look at the fun stuff! In CSS, properties are different than HTML properties. Properties in HTML are "additions" to the tag. In CSS, properties(at least that is what I call them) are the actual lines of CSS, such as this one... Let's take a look at "Color". Color is a CSS property which changes the text color. This is used for things such as paragraphs and links. Anyways, to use it simply type color, a colon(:) and the color. In CSS, there are default colors of which you can just type the name. Although, if the color doesn't exist you have to make it yourself using RGB values. RGB value is short for... Red, green, blue value. What it is is simply a value between 0 and 255(for each color... red, green and blue) which specifies the amount of that color that you need. For example, true red(just called red...) would be... 255,0,0. 255,255,0 is yellow, Etc... Anyways, to use a custom color simply type rgb() and add the numbers in between the brackets. Here is an example of both ways.
+                </p>
+                <ol class="code-segment rounded">
+                    <li>color: red;</li>
+                    <li>//This is the same as... color:rgb(255,0,0);</li>
+                </ol>
+                <ol class="code-segment rounded">
+                    <li>color: rgb(255,255,0);</li>
+                    <li>//That is the same as... color:yellow</li>
+                </ol>
+                <p>
+                    Either way of doing it works, just make sure it is a CSS color for the first method. Anyways, as you can see, css is really simple. Basically just right human words with a few exceptions such as RGB(which is actually human words, just an acronym for one. So... not that good of an example but that is essentially the least human-language like thing about css). Anyways, now that we know how to change the color of text, how about the background of something? To change the background color of something, simply type "background-color" and do the same as color.
+                </p>
+                <ol class="code-segment rounded">
+                    <li>background-color: rgb(255,255,255);</li>
+                    <li class="comment">//This is white... This should not change the background color one bit from the default so just mess around with the values.</li>
+                </ol>
+                <p>
+                    There you go, the background should now change... well, at least if you gave it a different value than 255,255,255 as that is white. Oh yeah! I forgot to mention. 0,0,0 is black, 255,255,255 is white, this is because 0,0,0 means there isn't any red, green, or blue. Essentially, there aren't any colors, picture a shadow how it has no light. 255,255,255 being the max red, max blue, and max green, has every color, just like how white light is all colors combined. Simple right? Anyways, this should be it for this section, feel free to look at the next one to learn a bit more CSS. Here is just what the final result should be.
+                </p>
+                <ol class="code-segment rounded">
+                    <li>p {</li>
+                    <li>color: red;</li>
+                    <li>}</li>
+                </ol>
+                <ol class="code-segment rounded">
+                    <li>.myFirstClass {</li>
+                    <li class="comment">// Remmeber that class from last section?</li>
+                    <li>background-color: rgb(255,255,255);</li>
+                    <li>color: red;</li>
+                    <li>}</li>
+                </ol>
             </div>
         </div>
         <div class="footer-wrapper">	
