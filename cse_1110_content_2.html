@@ -53,8 +53,131 @@
             <div class="content-paragraph">
                 <h1 class="section-header">More HTML Tags</h1>
                 <p>
-                    In the second section, we learned about some more HTML Tags. The first tag we learned about is actually the &lta&gt tag. This tag is used to display links. 
+                    In the second section, we learned about some more HTML Tags. The first tag we learned about is actually the &lta&gt tag. This tag is used to display links. Links are extremely useful as they can get you to ANY page. Whether it be to google or another part of your site(For example the side bar or top bar of my site). These links are a really powerful tool that you should definitely use. Anyways, how do you make a link work? First off, it is a block tag, meaning it has a closing tag. Anything between the opening and closing tag is the text it will show. You might want to mask the link itself by using the websites name, or you might want to show the link. Both cases, you type that in between the tag. Although, where do you specify the link? That is also quite simple.
                 </p>
+                <p>
+                    The link tag has 1 useful property. In the previous section, you saw the meta tag. Remember how there is a space in between "meta" and "charset"?
+                </p>
+                <ol class="code-segment rounded">
+                    <li>&ltmeta charset="UTF-8"&gt</li>
+                </ol>
+                <p>
+                    That is because "charset" is what i like to call a property. Properties are there to give more description to the tag. This is not so you can read it more easely, it is so the tag knows exactly what you want it to do. In the case above, you are telling the meta tag to specify a set of characters, that set being "UTF-8". It is the same for the &lta&gt tag. It wants some properties. Not specifically "charset" but a different one. This property is called "href" and it is there to specify the link. Simply give the link to "href" and when you click the link, it will send you to that page. Here is an example.
+                </p>
+                <ol class="code-segment rounded">
+                    <li>&lta href="google.com"&gtThis link sends you to google!&lt/a&gt</li>
+                </ol>
+                <p>
+                    This should give you something like this...
+                    <br><br>
+                    <a href="google.com">This link sends you to google!</a>
+                    <br><br>
+                    Now, don't click this since it will send you away from the site but you get the general idea. Anyways, you should replace the link with whatever you like, same for the text. Although, let's quickly see how you would make the link... well... link to another part of your site. It is extremely simple. Simply type the name of the html file you want to send the person to. Simply make sure to add the extension of the file(the ".html" part). It should look like this.
+                </p>
+                <ol class="code-segment rounded">
+                    <li>&lta href="myFileName.html"&gtThis links to another part of my page&lt/a&gt</li>
+                </ol>
+                <p>
+                    Now, i cannot show you the link because that isn't an actual file of mine but you get the idea! Simply type the name of the file and add ".html" at the end. Just make sure it is an actual webpage and not an image for example. Although, before moving on to the next tag, there is one more property to this tag that can be extremely useful. This property is the "target" property. What this does is specify how you should open the window. In other words, it says if you want to open the link in a new tab, a new window, the same tab, etc... Anyways, there are 5 values you can set it to. Let's look at the first two, you will understand why just the first two in a moment.
+                </p>
+                <p>
+                    The first value is "_self". This is quite simple, it just says that it should open in the same tab the link was clicked on. This is the default, meaning if you don't specify a target, that is what it will use. The second one is "_blank". This one opens the link in a new tab/window(depends on some settings on the users computer). Now, why only the first two? This is because the three others work in "iframes". I frames are essentially windows inside a window, a website inside of a website. Although, i am not sure how to use iframes. Anyways, feel free to search them up but there is a high chance that the three other values will not be used. I also do not suggest using Iframes as having multiple scoll bars can be tedious and confusing. Although, if you do not mind that, feel free to use them. Anyways, this is that the link should look like if you specify a target.
+                </p>
+                <ol class="code-segment rounded">
+                    <li>&lta href="google.com" target="_blank"&gtThis links to google in another tab&lt/a&gt</li>
+                </ol>
+                <p>
+                   The code should give you this.
+                   <br><br>
+                   <a href="google.com" target="_blank">This links to google in another tab</a>
+                   <br><br>
+                   There you go, you can now use as many links as you would like. Now, before we finish off with something extremely powerful, more powerful than links, we quickly need to learn about a few things, starting off with comments. Comments are a way to make the computer not read parts of the code. This allows you to keep a line of code in reserve or simply explain to yourself or anyone reading the code what something does. Comments are extremely easy to use as well, just as easy as they are useful. In javascript, they were "//". This is why you might have seen some greyed out lines. They were simply there to explain what it does. Anyways, there are usually two kinds of comments. Block, and inline. This does not apply just to HTML. Anyways, block is for multiple lines and inline is for anything in the same line. Anyways, HTML is not one of those languages with inline comments(most have either block and inline or just inline, html is a bit of a weird case). A comment in HTML should look like this.
+                </p>
+                <ol class="code-segment rounded">
+                    <li class="comment">&lt!--Your comments go here. Anything here is just for a person to read and not for the program to run</li>
+                    <li class="comment">look, it is still going on. Still just the comment. It doesn't stop until you end it.</li>
+                    <li class="comment">You don't need punctuation either. Just as long as you understand, it's fine! Anyways, lets end it--&gt</li>
+                </ol>
+                <p>
+                    It can go on for as many lines as you would like. Just simply add &lt!-- and --&gt and anything in between becomes commented.
+                    <!-- This is commented --> There is actually something here that is commented. You cannot read it though since it is being hidden from the page. Although, if you were to look at the code of the page, you would find it. It is in this paragraph if it helps. Anyways, let's take a look at the final tag before the... you know.
+                </p>
+                <p>
+                    &lttable&gt. Tables. What are tables? Tables are wooden str- sorry, not that kind of table. Tables are essentially ways of organizing data, such as numbers or text, in a multiple rows and columns. In other words, its a way to have multiple things organized. Let's take a look at what it looks like.
+                </p>
+               <table>
+                <tr>
+                    <thead>Words</thead>
+                    <thead>Definitions</thead>
+                </tr>
+                <tr>
+                    <td>Table</td>
+                    <td>A wooden structure used to place things on top, usually food.</td>
+                </tr>
+                <tr>
+                    <td>food</td>
+                    <td>Something that creatures eat to get energy</td>
+                </tr>
+               </table>
+               <p>
+                   Now, tables are usually a lot more useful than what i just did with it but im sure you'll find a better use than simply defining what a table is, and defining food. Anyways, tables might seem daunting but once you know how to use them, its actually quite simple. This is why i will explain how it works before showing you. Anyways, to create a table, you first need to add the &lttable&gt tag. This is a block tag(so add a closing tag) which simply says to the computer that you are creating a table. The next thing we have to do is specify rows for the table. Without a row, the table is nothing. To do this, simply add the &lttr&gt block tag. This tag is short for "table row". As the name suggests, it creates a row. Now, the first row is different from the other rows as the first row is usually there to mention what the specific column is about. So, for that, the first row will use a different tag. Anyways, that tag is the &ltthead&gt block tag. This tag is short for "table header". Self explanatory as well. Now, the more you have of those, the more columns there will be. If you have twenty, there will be twenty columns. Anyways, inside of this tag, you simply type what the name of the column is. Mine was words for the first and definitions for the second one.
+               </p>
+               <p>
+                   Once you are done with that, you need to add more rows in the table, this is where the information will go. Inside of those new rows, you will need to add a new tag. This tag is the &lttd&gt tag. I will let you think of what it could stand for for a moment. Anyways, it is the same as the &ltthead&gt tag, simply it adds cells for information. This is where i put table and the description of a table(in two seperate tags). Adding more rows will require you to add more of those tags inside as they are there to say what the cell should contain. Anyways, the &lttd&gt tag is short for "table data". Anyways, now that that is done. Let's see what it should look like, prepare for your eyes to burn.
+               </p>
+               <ol class="code-segment rounded">
+                   <li>&lttable&gt</li>
+                   <li>&lttr&gt</li>
+                   <li>&ltthead&gtWords&lt/thead&gt</li>
+                   <li>&ltthead&gtDefinitions&lt/thead&gt</li>
+                   <li>&lt/tr&gt</li>
+                   <li>&lttr&gt</li>
+                   <li>&lttd&gtTable&lt/td&gt</li>
+                   <li>&lttd&gtA wooden structure used to place things on top, usually food.&lt/td&gt</li>
+                   <li>&lt/tr&gt</li>
+                   <li>&lttr&gt</li>
+                   <li>&lttf&gtfood&lt/td&gt</li>
+                   <li>&lttd&gtSomething that creatures eat to get energy&lt/td&gt</li>
+                   <li>&lt/tr&gt</li>
+                   <li>&lt/table</li>
+               </ol>
+               <p>
+                   How are your eyes feeling? Trust me, it isn't anywhere near as bad as what it looks like in code. Anyways, there you go, you have a table. Now onto the last and most powerful thing of this section. "class" and "id". These two things are properties that any tag have access two. And what they do is provide an easy way to link up to CSS(what we learn about in the next section). These two properties are just like any other property, except for what you put inside. Inside, you type the keyword you are going to find it with in CSS. This is hard to explain without showing you. Let's look at an example.
+               </p>
+               <ol class="code-segment rounded">
+                   <li>&ltp class="myFirstClass"&gtThis is my pragraph&lt/p&gt</li>
+               </ol>
+               <ol>
+                   <li class="comment">//This is The CSS part</li>
+                   <li>.myFirstClass {</li>
+                   <li>background: red;</li>
+                   <li>}</li>
+               </ol>
+               <p class="myFirstClass">
+                   This is my paragraph
+               </p>
+               <p>
+                   How cool is that? In CSS, there are these things called selectors. Selectors simply allow you to select specific parts of HTML. You can select every single one of a specific tag(i will show how to o this in the next section) or you can select by class or id. In this case, we selected by class, although id works the same(except you have to change the dot to a hashtag(#) in the CSS portion). Now, let's quickly take a look at the difference between id and class. It's quite small a difference but anyways, class can have multiple while ids can only use one. In other words, one paragraph could have a class of "whiteText", a class or "blackBackground" and a class of "roundedBackground"(all of which you have to make in CSS), while an id could only have one of those. Now, this is really small of a thing but when using CSS, trust me, it will save your life. Before moving on to the next section though, let's quickly look at one more thing. It is kind of about the id property... kind of.
+               </p>
+               <p>
+                   In HTML, let's say you want to have a link which moves you to the same page, exept a different part of it. Essentially, the link is there so people don't have to scroll. It can be used as a type of glossary. Anyways, it is quite simple to use. You first off have to make a link. Just any normal link. The only difference is that "href" will have a different value than whatever the link is. Instead, you are going to put a hashtag and an id(the kind we learned above). What it will do when it is clicked is move you to where the id is first found on the page. You could give a paragraph the id of "lastParagraph" and move to it using the link by giving it a value of "#lastParagraph". In this case, it should look like this.
+               </p>
+               <ol class="code-segment rounded">
+                   <li>&lta href="#lastParagraph"</li>
+                   <li>&ltp id="lastParagraph"&gtThe last paragraph&lt/p&gt</li>
+               </ol>
+               <p>
+                   Now, this above would work although you as the user won't see a difference when clicked. That is because "lastParagraph" is already visible. Why waste the computer's energy moving to that location if your already there? So, it simply does not move. If you want it to move to there, simple make sure that the paragraph isn't seen when clicking the link(it might move you to it even if you see it, as long as it is somewhat far away. Just make sure to not stick it right after the link and it should work, if not than it needs to be lowered to move you to there.)
+               </p>
+               <p>
+                   There actually is one more tag i completely forgot about in the last section, although here i guess it will make more sense. Right after this though, feel free to move on to the next section. Anyways, the tag i forgot about was the &ltimg&gt tag. Quite a big one, i know. Anyways, as you can probably tell, it's used for images. So, how do you specify an image? Simple, using the "src" property. In this, you will simply type the image name and extension(if it is an image on your computer) or the link to the image(if it is online). This is an inline tag so no need for a closing tag. Although, there is a few more properties you should consider adding. The first one is the "alt" property. This is there if someone cannot see the page or if the image does not load. If they can't see the page, the text-to-speech is going to read what "alt" has to say instead of, speaking an image which is really hard to do since it isn't text. If the image simply does not load, it will display the text. Quite simple. Anyways, inside of the alt property you simply give it text. The last property(which is actually two in one) is the height or width property. This one belongs more in CSS section since it works to make the website look nice but eh, were talking about images now so why not. Anyways, it is pretty self explanatory, it provides either a width or height(in pixels) to the image. Either one can be used, it will simply change the size accordingly. Although both can be used, it is not suggested since it could squish the image because of incorrect measurments. Anyways, this is what the image tag should now look like.
+               </p>
+               <ol class="code-segment rounded">
+                   <li>&ltimg src="https://miro.medium.com/max/1032/1*D3KQrzaixORZTmkzNDs3Lg.png" alt="This is my image" width="100"&gt</li>
+               </ol>
+               <p>
+                   And there we go, just replace the image link with the actual link of the photo and you should be fine, although... i suggest just taking a look at that image. Just copy-paste the code(only this time, you should never copy-paste code since you do not learn anything from it) in your own page. :D Anyways, feel free to move on to the next section.
+               </p>
             </div>
         </div>
         <div class="footer-wrapper">	
