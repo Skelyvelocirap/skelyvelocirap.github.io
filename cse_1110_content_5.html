@@ -53,7 +53,34 @@
             <div class="content-paragraph">
                 <h1 class="section-header">More CSS Tags</h1>
                 <p>
-                    
+                    For the last section, we learned about 2 things. One of them being another selector. The other is... hidden things inside of some tags. Anyways, let's take a look at this new selector. Before, we have learned about selecting by class, type, and id. This time, we are selecting by descendant. Selecting by descendant is a way to select elements inside of other elements. Say you have an image inside of a paragraph, with descendant selection, we can select the image directly from the paragraph. Selecting by descendant is simple. You simply need to add a second selector(or third, fourth, and so on..). The second selector can be any kind, id, class, or type. It should be something a little like this.
+                </p>
+                <ol class="code-segment rounded">
+                    <li>p #theLink .myImageClass{</li>
+                    <li>}</li>
+                </ol>
+                <p>
+                    Here, we have selected an image with the class of "myImageClass". Now, why is this useful? Let's look at this code.
+                </p>
+                <ol class="code-segment rounded">
+                    <li class="comment">&lt--This is the html part--&gt</li>
+                    <li>&lta href="google.com"&gtGoogle&lt/a&gt</li>
+                    <li>&ltp&gt</li>
+                    <li>&lta src="myImage.png" id="theLink"&gt</li>
+                    <li>&ltimg src="myImage.png" class="myImageClass"&gt</li>
+                    <li>&lt/a&gt</li>
+                    <li>&lt/p&gt</li>
+                </ol>
+                <p>
+                    So... The CSS we used selects the image specifically inside the link inside of the paragraph and not simply every single image of that class. This can be used to change things about very specific elements without changing every one of them or having to make that one a different class. It is quite simple and just as useful. Now, let's take a look at those "hidden" things. What I mean by hidden things is that some HTML elements have things called pseudo-classes. These can be used to detect things such as someone hovering a link. Actually, that is the one we are going to show but feel free to search about more of them.
+                </p>
+                <ol class="code-segment rounded">
+                    <li>a: hover {</li>
+                    <li>background: black;</li>
+                    <li>}</li>
+                </ol>
+                <p>
+                    Now, if you hover over a link, the background will turn black! Its that simple. And this actually marks the end of the lesson! Feel free to search more things on the internet but this should be enough to get you started designing websites!
                 </p>
             </div>
         </div>
